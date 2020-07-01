@@ -1,0 +1,43 @@
+@media screen and (max-width: 850px) {
+  .map,
+  .contact {
+    width: 100%;
+  }
+  .popup {
+    width: 90%;
+    padding: 70px 0;
+    border-radius: 45px;
+    height: auto;
+  }
+  .popup__title {
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  .popup__input {
+    width: 80%;
+    margin-top: 25px;
+    padding: 0 10%;
+  }
+  .map {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .freeCard__img {
+    display: none;
+  }
+  .freeCard__text {
+    margin: 0;
+  }
+  .freeCard__button {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=adaptive__850px.css.map */

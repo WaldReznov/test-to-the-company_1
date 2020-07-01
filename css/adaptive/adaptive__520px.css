@@ -1,0 +1,39 @@
+@media screen and (max-width: 520px) {
+  .signUp__text {
+    display: none;
+  }
+  .signUp,
+  .signUp__button {
+    width: 60px;
+    height: 60px;
+  }
+  .signUp__shadow {
+    display: none;
+  }
+  .signUp__calendar {
+    margin-right: 0;
+  }
+  .logo {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .freeCard,
+  .freeCard__button,
+  .freeCard__shadow {
+    width: 300px;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  .works__text {
+    font-size: 12px;
+  }
+  .popup__button__container {
+    width: 80%;
+  }
+  .popup__button {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=adaptive__520px.css.map */

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EACjC,AAAA,YAAY,CAAC;IACX,KAAK,EAAE,kBAAkB;GAC1B",
+    "sources": [
+        "adaptive__400px.scss"
+    ],
+    "names": [],
+    "file": "adaptive__400px.css"
+}

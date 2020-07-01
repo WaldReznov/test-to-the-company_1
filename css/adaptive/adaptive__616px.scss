@@ -1,0 +1,33 @@
+@media screen and (max-width: 616px) {
+
+  .map,
+  .contact {
+    width: 100%;
+  }
+
+  .map {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .freeCard__img {
+    display: none;
+  }
+
+  .freeCard__text {
+    margin: 0;
+  }
+
+  .freeCard__button {
+    justify-content: center;
+    margin: 0;
+  }
+
+  .popup__text {
+    width: 80%;
+  }
+}

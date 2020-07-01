@@ -1,0 +1,31 @@
+@media screen and (max-width: 616px) {
+  .map,
+  .contact {
+    width: 100%;
+  }
+  .map {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .freeCard__img {
+    display: none;
+  }
+  .freeCard__text {
+    margin: 0;
+  }
+  .freeCard__button {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+  }
+  .popup__text {
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=adaptive__616px.css.map */
