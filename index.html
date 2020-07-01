@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+<body>
+
+  <main class="main">
+    <header class="header">
+      <div class="header__information">
+        <figure class="logo">
+          <img src="img/logo.png" alt="" class="logo__image">
+          <figcaption>
+            <p class="logo__text">Студия депиляции и массажный кабинет в Бресте</p>
+          </figcaption>
+        </figure>
+
+        <figure class="map">
+          <img src="img/map.png" alt="" class="map__img">
+
+          <figcaption class="map__figcaption">
+            <p class="map__text"><span class="map__span">Мы находимся в центре:</span><br>г. Брест, ул. Гоголя, д.65</p>
+            <button class="map__button" onmouseover="showMap()" onmouseout="hideMap()" >Смотреть на карте</button>
+              <iframe class="yandexMap" onmouseover="showMap()" onmouseout="hideMap()" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae3a098cc6103ae0ad9c2c03619370d35ca8c1555a700e8af4a8e10d1d6a65344&amp;source=constructor" width="16.667vw" height="12.5vw" frameborder="0"></iframe>
+         
+          </figcaption>
+        </figure>
+
+        <div class="contact">
+          <figure class="contact__figure">
+            <div class="circle">
+              <img src="img/phone.png" alt="" class="phone">
+            </div>
+  
+            <figcaption>
+              <p class="contact__call"><span class="greenCircle"></span>Звоните, мы сейчас работаем</p>
+              <p class="contact__number">+375 33 382 24 99</p>
+            </figcaption>
+          </figure>
+
+          <figure class="contact__figure">
+            <div class="circle">
+              <img src="img/timer.png" alt="" class="timer">
+            </div>
+  
+            <figcaption class="contact__figcaption">
+              <p class="contact__days">Пн-Вс <span class="contact__time">9:00-21:00</span></p>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="signUp">
+          <button class="signUp__button">
+            <img src="img/calendar.png" alt="" class="signUp__calendar">
+            <p class="signUp__text">Записаться онлайн</p>
+          </button>
+          
+          <div class="signUp__shadow"></div>
+        </div>
+      </div>
+      <nav class="nav">
+        <ul class="menu">
+          <li><a href="#" class="menu__item menu__active">Главная</a></li>
+          <li><a href="#" class="menu__item">Шугаринг и депиляция воском</a></li>
+          <li><a href="#" class="menu__item">Антицеллюлитный массаж</a></li>
+          <li><a href="#" class="menu__item">Классический массаж</a></li>
+          <li><a href="#" class="menu__item">Обучение</a></li>
+          <li><a href="#" class="menu__item">Косметика для мастеров</a></li>
+          <li><a href="#" class="menu__item">Статьи</a></li>
+          <li><a href="#" class="menu__item">О студии</a></li>
+          <li><a href="#" class="menu__item">Контакты</a></li>
+        </ul>
+
+        <div class="menu__shadow"></div>
+      </nav>
+      <a class="menu-link menu-active " onclick="toggleBurger()" href="#menu">
+        <span></span>
+      </a>
+    </header>
+
+    <div class="action">
+      <h1>Хотите избавиться от <br>
+        <span>нежелательных волос </span><br>
+        или нужен сеанс<br>
+        <span>антицеллюлитного массажа?</span></h1>
+  
+      <div class="card">
+        <div class="card__block">
+          <div class="works">
+            <div class="works__item">
+              <div class="works__marker"></div>
+              <p class="works__text">депиляция воском и Шугаринг;</p>
+            </div>
+            <div class="works__item">
+              <div class="works__marker"></div>
+              <p class="works__text">профессиональные сертифицированные мастера;</p>
+            </div>
+            <div class="works__item">
+              <div class="works__marker"></div>
+              <p class="works__text">работаем и с женщинами, и с мужчинами;</p>
+            </div>
+            <div class="works__item">
+              <div class="works__marker"></div>
+              <p class="works__text">результат уже после первой процедуры.</p>
+            </div>
+          </div>
+      
+          <div class="freeCard" onclick="showPopup()">
+            <button class="freeCard__button">
+              <p class="freeCard__text">Получить карту <br> клиента бесплатно</p>
+              <img src="img/branch-with-shadow.png" alt="" class="freeCard__img">
+            </button>
+            
+            <div class="freeCard__shadow"></div>
+          </div> 
+        </div>
+        <div class="card__block">
+          <img src="img/card.png" class="card__block__card" alt="">
+          <img src="img/card-client-back.png" class="card__block__gradient" alt="">
+          <button class="pulse__button" onmouseover="showCardInfo()" onmouseout="hideCardInfo()">i</button>
+          <div class="card__text" onmouseover="showCardInfo()" onmouseout="hideCardInfo()">
+            
+            <div class="card__text__image"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</p> 
+            </div>
+            <img class="card__text__shadow" src="img/info-block.png" alt="">
+          </div>
+        </div>
+      </div> 
+    </div>
+
+    <img src="img/woman.png" class="woman" alt="">
+
+    <div class="wave">
+      <div class="scrollDown">
+        <div class="circle_1">
+          <div class="circle_2">
+            <div class="circle_3">
+              <div class="scrollDown__action">
+                <div class="circle_4">
+                  <i class="arrow down"></i>
+                </div>
+
+                <div class="bar"></div>
+
+                <div class="circle_5"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <img src="img/paralax-left.png" class="paralax-left" alt="">
+    <div class="paralax-right__wrap">
+      <img src="img/paralax-right.png" class="paralax-right" alt="">
+    </div>
+
+    
+
+  </main>
+
+  <div class="popup__wrap">
+    <div class="popup__background" onclick="showPopup()">
+
+    </div>
+    <div class="popup">
+      <div class="popup__container">
+        <p class="popup__title"><span>Получите</span> программу обучения</p>
+        <p class="popup__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut </p>
+        <div class="popup__input popup__select"><p class="popup__input__text">Повышение квалификации</p><div class="arrow down down__gray"></div></div>
+        <div class="popup__input"><input type="text" placeholder="Ваше имя"></div>
+        <div class="popup__input"><input type="text" placeholder="Ваш номер телефона"></div>
+        <div class="freeCard popup__button__container" onclick="showPopupSuccess()">
+          <button class="freeCard__button popup__button">
+            <p class="freeCard__text popup__button__text">Получить программу</p>
+
+          </button>
+          <img src="img/plant (2).png" alt="" class="freeCard__img popup__button__img">
+          
+          <div class="freeCard__shadow popup__shadow popup__button"></div>
+        </div> 
+      </div>
+      
+      <div class="close" onclick="showPopup()"></div>
+      <img src="img/popup_book.png" class="popup__img" alt="">
+    </div>
+  </div>
+
+  <div class="popupSuccess__wrap">
+    <div class="popupSuccess__background" onclick="showPopupSuccess()"></div>
+    <div class="popupSuccess">
+      <div class="close" onclick="showPopupSuccess()"></div>
+      <img class="popupSuccess__img" src="img/successOk.png" alt="">
+      <p class="popupSuccess__text"><span>Ваш заказ принят.</span> <br> Ожидайте звонка</p>
+    </div>
+  </div>
+
+
+  <script src="script/script.js"></script>
+
+</body>
+</html>

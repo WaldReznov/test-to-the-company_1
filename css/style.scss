@@ -1,0 +1,1523 @@
+@import "fonts.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: #282828;
+  text-decoration: none;
+}
+
+button,
+a {
+  cursor: pointer
+}
+
+button:focus {
+  outline: none;
+}
+
+.main {
+  overflow: hidden;
+  position: relative;
+  background-attachment: fixed;
+  background-image: url(../img/main-background.png);
+  background-color: transparent;
+  background-size: cover;
+  height: 56.250vw;
+}
+
+.header {
+  padding-top: 1.563vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__information {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 7.240vw;
+}
+
+.logo__image {
+  width: 14.583vw;
+}
+
+.logo__text {
+  width: 7.500vw;
+  margin-left: 2.292vw;
+  font-size: 0.729vw;
+  text-align: justify;
+  color: #282828;
+  font-family: "Museo Sans Cyrl 300";
+}
+
+.map {
+  height: 4.063vw;
+  display: flex;
+  align-items: center;
+}
+
+.map__img {
+  width: 4.063vw;
+  margin-right: 1.198vw;
+}
+
+.map__text {
+  color: #282828;
+  letter-spacing: 0.042vw;
+  line-height: 0.938vw;
+  font-size: 0.833vw;
+}
+
+.map__span {
+  color: #282828;
+  font-family: "Museo Sans Cyrl 700";
+  line-height: 1.094vw;
+}
+
+.map__button {
+  color: #ff6078;
+  font-family: "Museo Sans Cyrl 500";
+  font-size: 0.625vw;
+  text-transform: uppercase;
+  letter-spacing: 0.063vw;
+  border: none;
+  background: transparent;
+  outline: none;
+  padding-bottom: 0.313vw;
+  border-bottom: 0.052vw solid #ff6078;
+}
+
+.map__figcaption {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.circle {
+  width: 1.823vw;
+  height: 1.823vw;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.573vw;
+}
+
+.contact__figure {
+  display: flex;
+  align-items: center;
+}
+
+.contact__figure:first-child {
+  margin-bottom: 0.521vw;
+}
+
+.greenCircle {
+  width: 0.313vw;
+  height: 0.313vw;
+  box-shadow: 0 0 0.365vw rgba(79, 160, 55, 0.61);
+  background-color: #27b24b;
+  border-radius: 50%;
+  margin-right: 0.469vw;
+}
+
+.contact__call {
+  display: flex;
+  align-items: center;
+  color: #282828;
+  font-family: "Museo Sans Cyrl 500";
+  font-size: 0.625vw;
+  letter-spacing: 0.050vw;
+}
+
+.contact__number {
+  color: #282828;
+  font-family: "Museo Sans Cyrl 500";
+  font-size: 1.250vw;
+  line-height: 0.938vw;
+  margin-top: 0.521vw;
+  letter-spacing: 0.031vw;
+}
+
+.phone,
+.timer {
+  width: 0.781vw;
+  height: 0.781vw;
+}
+
+.contact__days {
+  color: #282828;
+  font-size: 0.833vw;
+  font-family: "Museo Sans Cyrl 300";
+  letter-spacing: 0.042vw;
+}
+
+.contact__time {
+  font-family: "Museo Sans Cyrl 700";
+}
+
+.contact__figcaption {
+  display: flex;
+  align-items: center;
+}
+
+.map,
+.contact {
+  margin-right: 3.333vw;
+}
+
+.signUp {
+  width: 11.979vw;
+  height: 3.229vw;
+  position: relative;
+}
+
+.signUp__button {
+  width: 11.979vw;
+  height: 3.229vw;
+  border-radius: 1.563vw;
+  background-color: #fefcfb;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+}
+
+.signUp__shadow {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0.156vw;
+  width: 11.979vw;
+  height: 3.229vw;
+  border-radius: 1.563vw;
+  background-color: #ebeaea;
+  z-index: 1;
+}
+
+.signUp__calendar {
+  height: 1.042vw;
+  width: 1.042vw;
+  margin-right: 0.521vw;
+}
+
+.signUp__text {
+  color: #1f1d1d;
+  font-family: "Museo Sans Cyrl 500";
+  font-size: 0.781vw;
+  line-height: 1.250vw;
+  letter-spacing: 0.039vw;
+}
+
+.nav {
+  margin-top: 0.781vw;
+  width: 81.250vw;
+  height: 3.125vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative
+}
+
+.menu {
+  width: 81.250vw;
+  height: 3.125vw;
+  border-radius: 0.260vw;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style-type: none;
+  z-index: 2;
+}
+
+.menu>li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu__item {
+  color: #282828;
+  font-size: 0.781vw;
+  font-family: "Museo Sans Cyrl 300";
+  letter-spacing: 0.039vw;
+}
+
+.menu__active {
+  font-family: "Museo Sans Cyrl 700";
+}
+
+.menu__shadow {
+  width: 79.375vw;
+  height: 3.125vw;
+  border-radius: 0.260vw;
+  background-color: rgba(255, 255, 255, .5);
+  position: absolute;
+  content: '';
+  top: 0.365vw;
+  z-index: 1;
+}
+
+.paralax-left {
+  position: absolute;
+  width: 19.115vw;
+  height: 17.708vw;
+  top: 14.167vw;
+  left: 6.042vw;
+  z-index: 1;
+}
+
+.paralax-right__wrap {
+  position: absolute;
+  top: 4.323vw;
+  right: 0;
+  width: 8vw;
+  height: 13.854vw;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.paralax-right {
+  width: 13.125vw;
+  height: 13.854vw;
+}
+
+.burger-click-region {
+  display: none;
+}
+
+h1 {
+  margin-left: 15.365vw;
+  margin-top: 5.469vw;
+  color: #282828;
+  font-size: 2.500vw;
+  line-height: 2.865vw;
+  font-family: "Museo Sans Cyrl 100";
+}
+
+h1>span {
+  font-family: "Museo Sans Cyrl 700";
+}
+
+.works {}
+
+.works__item {
+  display: flex;
+  align-items: center;
+}
+
+.works__marker {
+  border-radius: 50%;
+  margin-right: 0.677vw;
+  height: 0.885vw;
+  width: 0.885vw;
+  box-shadow: 0 0.052vw 0.677vw rgba(239, 148, 153, 0.38);
+  border: 0.208vw solid #f7f7fb;
+  background-color: #ef9499;
+}
+
+.works__text {
+  color: #282828;
+  font-family: "Museo Sans Cyrl 300";
+  font-size: 0.938vw;
+  line-height: 1.875vw;
+  letter-spacing: 0.023vw;
+}
+
+
+.freeCard {
+  cursor: pointer;
+  position: relative;
+  width: 19.792vw;
+  height: 4.479vw;
+  margin-top: 3.229vw;
+}
+
+.freeCard__button {
+  width: 19.792vw;
+  height: 4.479vw;
+  border-radius: 2.240vw;
+  background-image: linear-gradient(to top, #ee858c 0%, #fabcbc 98%, #fabcbc 100%);
+  border: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+}
+
+.freeCard__shadow {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0.208vw;
+  width: 19.792vw;
+  height: 4.479vw;
+  border-radius: 2.240vw;
+  background-color: #d7747a;
+  z-index: 1;
+}
+
+.freeCard__img {
+  position: absolute;
+  height: 3.646vw;
+  width: 10.885vw;
+  left: 11.927vw;
+}
+
+.freeCard__text {
+  margin-left: 2.083vw;
+  text-shadow: 0 0.052vw 0.260vw rgba(210, 110, 116, 0.49);
+  color: #ffffff;
+  font-family: "Museo Sans Cyrl 300";
+  font-size: 0.729vw;
+  text-transform: uppercase;
+  letter-spacing: 0.087vw;
+}
+
+.card {
+
+  display: flex;
+  margin-top: 3.125vw;
+  margin-left: 15.729vw;
+}
+
+.card__block {
+  position: relative;
+}
+
+.card__block:nth-child(1) {
+  margin-right: 4.948vw;
+}
+
+.card__block__card {
+  width: 9.167vw;
+  height: 12.292vw;
+}
+
+.card__block__gradient {
+  position: absolute;
+  top: 1.146vw;
+  left: 5.677vw;
+  width: 6.719vw;
+  height: 6.302vw;
+}
+
+.pulse__container {}
+
+.pulse__button {
+  z-index: 5;
+  position: absolute;
+  left: 8vw;
+  top: 9vw;
+  font-family: "Appetite";
+  color: white;
+  font-size: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.083vw;
+  height: 2.083vw;
+  border: none;
+  box-shadow: 0 0 0 0 rgba(245, 162, 166, 0.7);
+  border-radius: 50%;
+  background-color: rgb(245, 162, 166);
+  cursor: pointer;
+  -webkit-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  -moz-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  -ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+
+.pulse__button:hover {
+  -webkit-animation: none;
+  -moz-animation: none;
+  -ms-animation: none;
+  animation: none;
+}
+
+@-webkit-keyframes pulse {
+  to {
+    box-shadow: 0 0 0 2.344vw rgba(232, 76, 61, 0);
+  }
+}
+
+@-moz-keyframes pulse {
+  to {
+    box-shadow: 0 0 0 2.344vw rgba(232, 76, 61, 0);
+  }
+}
+
+@-ms-keyframes pulse {
+  to {
+    box-shadow: 0 0 0 2.344vw rgba(232, 76, 61, 0);
+  }
+}
+
+@keyframes pulse {
+  to {
+    box-shadow: 0 0 0 2.344vw rgba(232, 76, 61, 0);
+  }
+}
+
+
+.card__text {
+  z-index: 4;
+  top: 0vw;
+  position: absolute;
+  left: 8vw;
+  display: none;
+  width: 9.167vw;
+  height: 10.938vw;
+}
+
+.card__text__image {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  color: #282828;
+  font-family: "Museo Sans Cyrl 300";
+  font-size: 0.729vw;
+  font-weight: 400;
+  letter-spacing: 0.087vw;
+  text-align: center;
+  width: 9.167vw;
+  height: 10.938vw;
+  padding: 1.406vw 1.667vw;
+  background-size: cover;
+  background-image: url('../img/info-white-block.png')
+}
+
+.card__text__shadow {
+  position: absolute;
+  top: -0.529vw;
+  left: 0.529vw;
+  width: 9.167vw;
+  height: 10.938vw;
+  z-index: 1;
+
+}
+
+.woman {
+  z-index: 3;
+  width: 45.208vw;
+  height: 39.583vw;
+  position: absolute;
+  right: 0;
+  top: 13.906vw;
+}
+
+.wave {
+  z-index: 3;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 8.021vw;
+  background-image: url('../img/wave.png');
+  background-size: cover;
+  display: flex;
+  background-position: center;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.wave__img {
+  width: 100%;
+  height: 8.021vw;
+}
+
+.action {
+  position: absolute;
+  z-index: 4;
+}
+
+.circle_1 {
+  width: 6.823vw;
+  height: 6.823vw;
+  border-radius: 50%;
+  border: 0.052vw solid rgba(255, 255, 255, .25);
+}
+
+.circle_2 {
+  width: 5.208vw;
+  height: 5.208vw;
+  border-radius: 50%;
+  border: 0.052vw solid rgba(255, 255, 255, .5);
+}
+
+.circle_3 {
+  width: 3.646vw;
+  height: 3.646vw;
+  border-radius: 50%;
+  border: 0.052vw solid rgb(255, 255, 255);
+  position: relative;
+}
+
+.circle_1,
+.circle_2,
+.circle_3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scrollDown__action {
+  cursor: pointer;
+  top: 0.677vw;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circle_4 {
+  width: 1.667vw;
+  height: 1.667vw;
+  border-radius: 50%;
+  border: 0.156vw solid #f8b4b5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bar {
+  width: 0.104vw;
+  height: 1.198vw;
+  background-color: #f8b4b5;
+}
+
+.circle_5 {
+  width: 0.625vw;
+  height: 0.625vw;
+  border: 0.156vw solid #f8b4b5;
+  border-radius: 50%;
+}
+
+.down {
+  border: solid black;
+  border-width: 0 0.156vw 0.156vw 0;
+  display: inline-block;
+  padding: 0.156vw;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.scrollDown {
+  top: -2vw;
+  position: absolute;
+}
+
+.yandexMap {
+  position: absolute;
+  width: 16.667vw;
+  height: 12.500vw;
+  bottom: -12.552vw;
+  z-index: 7;
+  display: none;
+}
+
+
+.close {
+  position: absolute;
+  right: 2.396vw;
+  top: 2.396vw;
+  width: 1.667vw;
+  height: 1.667vw;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.close:hover {
+  opacity: 1;
+}
+
+.close:before,
+.close:after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  content: '';
+  height: 0.625vw;
+  width: 0.104vw;
+  background-color: #333;
+}
+
+.close:before {
+  transform: rotate(45deg);
+}
+
+.close:after {
+  transform: rotate(-45deg);
+}
+
+.popup__wrap,
+.popupSuccess__wrap {
+  z-index: 100;
+  display: none;
+  position: fixed;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.popup__background,
+.popupSuccess__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .8);
+}
+
+.popup {
+  z-index: 9;
+  position: relative;
+  width: 38.438vw;
+  height: 34.844vw;
+  padding: 3.906vw 5.208vw;
+  background-image: url('../img/popup_background.png');
+  background-size: cover;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.popup__title {
+  color: #282828;
+  font-size: 1.875vw;
+  font-family: "Museo Sans Cyrl 300";
+}
+
+.popup__title span {
+  font-family: "Museo Sans Cyrl 700";
+}
+
+.popup__text {
+  width: 27.396vw;
+  height: 2.813vw;
+  text-align: center;
+  white-space: pre-wrap;
+  overflow: hidden;
+  color: #282828;
+  font-family: "Museo Sans Cyrl 300";
+  font-size: 0.833vw;
+  letter-spacing: 0.021vw;
+}
+
+.popup__img {
+  position: absolute;
+  top: 9.583vw;
+  width: 13.698vw;
+  height: 20.104vw;
+  left: -5.625vw;
+}
+
+.popup__input {
+  width: 26.042vw;
+  height: 4.167vw;
+  border-radius: 2.083vw;
+  border: 0.052vw solid #fbeeef;
+  background-color: #ffffff;
+  padding: 0 2.083vw;
+}
+
+.popup__input input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  color: #989797;
+  font-family: "Museo Sans Cyrl 300";
+  font-size: 0.938vw;
+  line-height: 1.250vw;
+  letter-spacing: 0.023vw;
+}
+
+.popup__input input::placeholder,
+.popup__input__text {
+  color: #989797;
+  font-family: "Museo Sans Cyrl 300";
+  font-size: 0.938vw;
+  line-height: 1.250vw;
+  letter-spacing: 0.023vw;
+}
+
+.down__gray {
+  border-color: #989797;
+}
+
+.popup__select {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popup__container {
+  z-index: 3;
+  position: absolute;
+  height: calc(34.844vw - 3.906vw - 3.906vw);
+  width: calc(38.438vw - 5.208vw * 2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.popup__button__text {
+  margin-left: 3.542vw;
+}
+
+.popup__button__container {
+  margin-top: 0;
+  width: 25vw;
+  height: 3.958vw;
+}
+
+.popup__button__img {
+  position: absolute;
+  content: '';
+  left: 18.490vw;
+  top: 0.208vw;
+  width: 10.417vw;
+  height: 2.708vw;
+  z-index: 4;
+}
+
+.popup__button {
+  width: 25vw;
+  height: 3.958vw;
+}
+
+.popupSuccess {
+  background-position: right bottom;
+  border-radius: 2.604vw;
+  background-color: #fff;
+  width: 27.292vw;
+  height: 17.552vw;
+  position: relative;
+  background-image: url('../img/popupSuccess.png');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popupSuccess__img {
+  margin-top: 4.010vw;
+  width: 4.740vw;
+  height: 4.740vw;
+}
+
+.popupSuccess__text {
+  text-align: center;
+  color: #282828;
+  font-size: 1.563vw;
+  letter-spacing: 0.039vw;
+  font-family: "Museo Sans Cyrl 300";
+}
+
+.popupSuccess__text span {
+  font-family: "Museo Sans Cyrl 700";
+}
+
+.menu-link {
+  display: none;
+  width: 60px;
+  height: 40px;
+  top: 20px;
+  right: 20px;
+  position: absolute;
+}
+
+.menu-link span,
+.menu-link span:before,
+.menu-link span:after {
+  display: block;
+  height: 2px;
+  width: 60px;
+  background-color: #333;
+  position: absolute;
+  top: 50%;
+}
+
+.menu-link span:before {
+  transition: all 0.2s;
+  content: '';
+  margin-top: -12px;
+}
+
+.menu-link span:after {
+  transition: all 0.2s;
+  content: '';
+  margin-top: 12px;
+}
+
+.menu-link-active span {
+  background: transparent;
+}
+
+.menu-link-active span:before {
+  transform: rotate(135deg);
+  margin-top: 0;
+}
+
+.menu-link-active span:after {
+  transform: rotate(-135deg);
+  margin-top: 0;
+}
+
+@media screen and (max-width: 992px) {
+
+  .yandexMap {
+    width: 240px;
+    height: 320px;
+    top: 78px;
+  }
+
+  .popup {
+    width: 738px;
+    height: 669px;
+  }
+
+  .popup__title {
+    font-size: 36px;
+  }
+
+  .popup__text {
+    width: 450px;
+    height: auto;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    overflow: unset;
+  }
+
+  .popup__img {
+    display: none;
+  }
+
+  .popup__container {
+    height: 100%;
+    width: auto;
+    position: relative;
+  }
+
+  .popup__input {
+    width: 500px;
+    height: 80px;
+    border-radius: 40px;
+    border: 1px solid #fbeeef;
+    padding: 0 31px;
+  }
+
+
+  .popup__input input,
+  .popup__input__text,
+  .popup__input input::placeholder {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.45px;
+  }
+
+  .main {
+    height: auto;
+  }
+
+  .header {
+    padding: 0 1%;
+  }
+
+  .logo {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo__image {
+    width: 280px;
+  }
+
+  .logo__text {
+    width: auto;
+    margin-left: 10px;
+    font-size: 14px;
+  }
+
+  .map {
+    height: 78px;
+  }
+
+  .map__img {
+    width: 78px;
+    margin-right: 23px;
+  }
+
+  .map__text {
+    color: #282828;
+    letter-spacing: 0.8px;
+    line-height: 21px;
+    font-size: 16px;
+  }
+
+  .map__span {
+    color: #282828;
+    font-family: "Museo Sans Cyrl 700";
+    letter-spacing: 0.042vw;
+    line-height: 18px;
+  }
+
+  .map__button {
+    color: #ff6078;
+    font-family: "Museo Sans Cyrl 500";
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    border: none;
+    background: transparent;
+    outline: none;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #ff6078;
+  }
+
+  .circle {
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 11px;
+  }
+
+  .contact__figure {
+    width: 260px;
+  }
+
+  .contact__figure:first-child {
+    margin-bottom: 10px;
+  }
+
+  .greenCircle {
+    width: 6px;
+    height: 6px;
+    box-shadow: 0 0 7px rgba(79, 160, 55, 0.61);
+    margin-right: 9px;
+  }
+
+  .contact__call {
+    font-size: 12px;
+    letter-spacing: 0.96px;
+  }
+
+  .contact__number {
+    margin-top: 10px;
+    font-size: 24px;
+    line-height: 18px;
+    letter-spacing: 0.6px;
+  }
+
+  .phone,
+  .timer {
+    width: 15px;
+    height: 15px;
+  }
+
+  .contact__days {
+    font-size: 16px;
+    letter-spacing: 0.8px;
+  }
+
+  .map,
+  .contact {
+    margin-right: 0;
+    width: 50%;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .signUp {
+    position: fixed;
+    bottom: 40px;
+    left: 40px;
+    z-index: 8;
+    width: 229px;
+    height: 62px;
+  }
+
+  .signUp__button {
+    width: 229px;
+    height: 62px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 5px 0px black;
+  }
+
+  .signUp__shadow {
+    top: 3px;
+    width: 229px;
+    height: 62px;
+    border-radius: 30px;
+  }
+
+  .signUp__calendar {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+
+  .signUp__text {
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.75px;
+  }
+
+  .nav {
+    position: absolute;
+    width: calc(100% - 100px);
+    height: 100%;
+    top: 0;
+    left: -100%;
+    transition: all 2s;
+    margin: 0;
+    z-index: 99;
+  }
+
+  .menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, .8);
+  }
+
+  .nav__active {
+    left: 0;
+  }
+
+
+  .menu__item {
+    color: white;
+    font-size: 15px;
+    letter-spacing: 0.75px;
+  }
+
+  .menu__shadow {
+    width: 1523px;
+    height: 61px;
+    border-radius: 5px;
+    top: 7px;
+    display: none;
+  }
+
+  .paralax-left {
+    width: 367px;
+    height: 340px;
+    top: 272px;
+    left: 116px;
+  }
+
+  .paralax-right__wrap {
+    top: 84px;
+    width: 153.6px;
+    height: 266px;
+  }
+
+  .paralax-right {
+    width: 252px;
+    height: 266px;
+  }
+
+  h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 48px;
+    line-height: 55px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  .works__marker {
+    border-radius: 50%;
+    margin-right: 14px;
+    width: 17px;
+    height: 17px;
+    box-shadow: 0 1px 13px rgba(239, 148, 153, 0.38);
+    border: 4px solid #f7f7fb;
+  }
+
+  .works__text {
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.45px;
+  }
+
+  .freeCard {
+    margin-top: 30px;
+    width: 370px;
+    height: 80px;
+  }
+
+  .freeCard__button {
+    width: 370px;
+    height: 80px;
+    border-radius: 40px;
+  }
+
+  .freeCard__shadow {
+    top: 4px;
+    width: 370px;
+    height: 80px;
+    border-radius: 40px;
+    background-color: #d7747a;
+  }
+
+  .freeCard__img {
+    position: absolute;
+    width: 209px;
+    height: 70px;
+    left: 230px;
+  }
+
+  .freeCard__text {
+    margin-left: 40px;
+    text-shadow: 0 1px 5px rgba(210, 110, 116, 0.49);
+    color: #ffffff;
+    font-family: "Museo Sans Cyrl 300";
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.68px;
+  }
+
+  .woman {
+    display: none;
+  }
+
+  .card {
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card__block:nth-child(1) {
+    margin-right: 0;
+  }
+
+  .card__block:nth-child(2) {
+    display: none;
+  }
+
+  .action {
+    width: 100%;
+    position: relative;
+  }
+
+  .card__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header__information {
+    flex-wrap: wrap;
+  }
+
+  .paralax-right {
+    display: none;
+  }
+
+  .paralax-left {
+    display: none;
+  }
+
+  .menu-link {
+    display: block;
+    z-index: 99;
+  }
+
+  .menu-link-active {
+    color: #fff;
+  }
+
+  .wave {
+    margin-top: 52px;
+    position: relative;
+    width: 100%;
+    height: 154px;
+  }
+
+  .circle_1 {
+    width: 131px;
+    height: 131px;
+    border: 1px solid rgba(255, 255, 255, .25);
+  }
+
+  .circle_2 {
+    width: 101px;
+    height: 101px;
+    border: 1px solid rgba(255, 255, 255, .5);
+  }
+
+  .circle_3 {
+    width: 70px;
+    height: 70px;
+    border: 1px solid rgb(255, 255, 255);
+  }
+
+  .circle_4 {
+    width: 32px;
+    height: 32px;
+    border: 3px solid #f8b4b5;
+  }
+
+  .down {
+    border-width: 0 3px 3px 0;
+    padding: 3px;
+  }
+
+  .bar {
+    width: 2px;
+    height: 23px;
+  }
+
+  .circle_5 {
+    width: 12px;
+    height: 12px;
+    border: 3px solid #f8b4b5;
+  }
+
+  .scrollDown__action {
+    top: 18px;
+  }
+
+  .scrollDown {
+    top: -42px;
+  }
+
+
+  .popup__button__container,
+  .popup__button {
+    width: 491px;
+    height: 76px;
+    border-radius: 38px;
+  }
+
+  .close {
+    width: 12px;
+    height: 12px;
+    top: 47px;
+    right: 47px;
+  }
+
+  .close:before,
+  .close:after {
+    height: 2px;
+    width: 12px;
+  }
+
+
+  .popup__button__text {
+    font-size: 18px;
+  }
+
+  .popup {
+    padding: 70px 100px;
+  }
+
+  .popup__button__container {
+    width: 70%;
+    height: 76px;
+    border-radius: 38px;
+  }
+
+  .popup__button {
+    width: 100%;
+  }
+
+  .popupSuccess {
+    width: 524px;
+height: 337px;
+border-radius: 50px;
+margin: 0 5%;
+  }
+
+  .popupSuccess__img {
+    margin-top: 77px;
+    width: 91px;
+    height: 91px;
+}
+
+.popupSuccess__text {
+  font-size: 30px;
+  letter-spacing: 0.75px;
+}
+
+}
+
+@media screen and (max-width: 850px) {
+
+  .map,
+  .contact {
+    width: 100%;
+  }
+
+  .popup {
+    width: 90%;
+    padding: 70px 0;
+    border-radius: 45px;
+    height: auto;
+  }
+
+  .popup__title {
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  .popup__input {
+    width: 80%;
+    margin-top: 25px;
+    padding: 0 10%;
+  }
+
+  .map {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .freeCard__img {
+    display: none;
+  }
+
+  .freeCard__text {
+    margin: 0;
+  }
+
+  .freeCard__button {
+    justify-content: center;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 616px) {
+
+  .map,
+  .contact {
+    width: 100%;
+  }
+
+  .map {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .freeCard__img {
+    display: none;
+  }
+
+  .freeCard__text {
+    margin: 0;
+  }
+
+  .freeCard__button {
+    justify-content: center;
+    margin: 0;
+  }
+
+  .popup__text {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .signUp__text {
+    display: none;
+  }
+
+  .signUp,
+  .signUp__button {
+    width: 60px;
+    height: 60px;
+  }
+
+  .signUp__shadow {
+    display: none;
+  }
+
+  .signUp__calendar {
+    margin-right: 0;
+  }
+
+  .logo {
+    align-items: flex-start;
+  }
+
+  .freeCard,
+  .freeCard__button,
+  .freeCard__shadow {
+    width: 300px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .works__text {
+    font-size: 12px;
+  }
+  
+  .popup__button__container {
+    width: 80%;
+  }
+
+  .popup__button {
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  .logo__image {
+    width: calc(100% - 100px);
+  }
+}
